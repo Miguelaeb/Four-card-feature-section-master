@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: var(--Very-Light-Gray);
+}
+
+.container {
+    margin: 5rem 1.3rem 0 1.3rem;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    color: var(--Very-Dark-Blue);
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
+.heading h2 {
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 5px;
+}
+
+.description {
+    margin: 30px 10px 0 10px;
+}
+
+.heading p {
+    color: var(--Grayish-Blue);
+    line-height: 25px;
+}
+
+.cards-container {
+    margin-top: 3.1rem;
+}
+
+.card {
+    border-radius: 7px;
+    padding: 1rem;
+    margin-bottom: 2.8rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-title {
+    color: var(--Very-Dark-Blue);
+    margin-top: 2rem;
+}
+
+.card-description {
+    color: var(--Grayish-Blue);
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.image {
+    text-align: right;
+}
+
+.supervisor-card {
+    border-top: 5px solid var(--Cyan);
+}
+
+.team-builder-card {
+    border-top: 5px solid var(--Red);
+}
+
+.karma-card {
+    border-top: 5px solid var(--Orange);
+}
+
+.calculator-card {
+    border-top: 5px solid var(--Blue);
+}
+
+@media screen and (min-width: 768px) {
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 352px);
+        gap: 25px;
+        justify-content: center; 
+    }
+  }
+
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+    .heading h1 {
+        font-size: 2.5rem;
+    }
+
+    .heading h2 {
+        font-size: 2.5rem;
+    }
+
+    .heading h2 {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        margin: 3.2rem 27.5rem 0 27.5rem;
+    }
+
+    .heading p {
+        line-height: 2rem;
+        font-weight: 400;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .card {
+        width: 400px;
+    }
+
+    .supervisor-card, .karma-card {
+     transform: translateY(50%);   
+    }
+
+    .calculator-card {
+        margin-top: -3.1rem;
+    }
+  }
